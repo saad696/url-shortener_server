@@ -13,6 +13,8 @@ if (process.env.NODE_ENV === 'qa') {
 
 const app = express();
 
+app.set('trust proxy', true);
+
 // middlewares
 app.use(cors());
 app.use(express.json());
